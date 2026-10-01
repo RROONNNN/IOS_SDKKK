@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F46A9CE0306E6846003B2B8A /* PulseSDK in Frameworks */ = {isa = PBXBuildFile; productRef = F46A9CDF306E6846003B2B8A /* PulseSDK */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F46A9CBF306E6074003B2B8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F46A9CE0306E6846003B2B8A /* PulseSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 				F46A9CB3306E6073003B2B8A /* PulseDemo */,
 				F46A9CC1306E6074003B2B8A /* PulseDemoTests */,
 				F46A9CCB306E6074003B2B8A /* PulseDemoUITests */,
+				F46A9CDE306E6840003B2B8A /* Frameworks */,
 				F46A9CB2306E6073003B2B8A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +96,13 @@
 				F46A9CC8306E6074003B2B8A /* PulseDemoUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F46A9CDE306E6840003B2B8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +125,7 @@
 			);
 			name = PulseDemo;
 			packageProductDependencies = (
+				F46A9CDF306E6846003B2B8A /* PulseSDK */,
 			);
 			productName = PulseDemo;
 			productReference = F46A9CB1306E6073003B2B8A /* PulseDemo.app */;
@@ -195,6 +209,9 @@
 			);
 			mainGroup = F46A9CA8306E6073003B2B8A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F46A9CDB306E66FC003B2B8A /* XCLocalSwiftPackageReference "../../PulseSDK" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F46A9CB2306E6073003B2B8A /* Products */;
 			projectDirPath = "";
@@ -572,6 +589,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		F46A9CDB306E66FC003B2B8A /* XCLocalSwiftPackageReference "../../PulseSDK" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../PulseSDK;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F46A9CDF306E6846003B2B8A /* PulseSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F46A9CDB306E66FC003B2B8A /* XCLocalSwiftPackageReference "../../PulseSDK" */;
+			productName = PulseSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F46A9CA9306E6073003B2B8A /* Project object */;
 }
