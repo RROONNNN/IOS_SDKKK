@@ -11,9 +11,8 @@ public struct OSLogSink: PulseSink {
 
     public func write(_ event: PulseEvent) {
         let logger = Logger(subsystem: subsystem, category: category)
-        logger.log(level: event.level.osLogType, "\(event.logLine, privacy: .public)")
+        logger.log(level: event.level.osLogType, "\(event.logLine)")
     }
-
 }
 
 extension PulseLevel {

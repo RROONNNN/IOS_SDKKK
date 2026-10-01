@@ -21,7 +21,7 @@ struct ContentView: View {
                         Button("Pulse.log(\"Bad Event Name\")") {
                             Pulse.log("Bad Event Name")
                         }
-                        Button("Pulse.log(\"fail_me\") (sink lỗi)") {
+                        Button("Pulse.log(\"fail_me\")") {
                             Pulse.log("fail_me", level: .warn)
                         }
                         Button("Spam 1000 events") {

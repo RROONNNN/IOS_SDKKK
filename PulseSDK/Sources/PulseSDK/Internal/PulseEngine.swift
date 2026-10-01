@@ -6,6 +6,7 @@ final class PulseEngine: Sendable {
     private let continuation: AsyncStream<PulseEvent>.Continuation
 
     init(config: PulseConfig, sinks: [any PulseSink] ) {
+        print("sinks: \(sinks)")
         let capacity = min(max(config.maxQueueSize, 1), 10_000)
         if capacity != config.maxQueueSize {
             InternalLog.warning("maxQueueSize \(config.maxQueueSize) is out of range, using \(capacity)")
@@ -25,7 +26,6 @@ final class PulseEngine: Sendable {
                     do {
                         try sink.write(enriched)
                     } catch {
-                        // Một sink lỗi không được làm hỏng SDK, càng không được crash app
                         InternalLog.warning("Sink '\(sink.id)' failed: \(error)")
                     }
                 }
