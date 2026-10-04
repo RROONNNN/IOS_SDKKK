@@ -18,4 +18,5 @@ public enum PulseLevel: Int, Sendable, Comparable {
          case .error: "ERROR"
          }
      }
+    
 }

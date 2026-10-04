@@ -1,0 +1,1827 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "PulseSDK",
+    "printedName": "PulseSDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PulseSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "os",
+        "printedName": "os",
+        "declKind": "Import",
+        "moduleName": "PulseSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PulseSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "os",
+        "printedName": "os",
+        "declKind": "Import",
+        "moduleName": "PulseSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OSLogSink",
+        "printedName": "OSLogSink",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PulseSDK9OSLogSinkV2idSSvp",
+            "mangledName": "$s8PulseSDK9OSLogSinkV2idSSvp",
+            "moduleName": "PulseSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK9OSLogSinkV2idSSvg",
+                "mangledName": "$s8PulseSDK9OSLogSinkV2idSSvg",
+                "moduleName": "PulseSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(subsystem:category:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OSLogSink",
+                "printedName": "PulseSDK.OSLogSink",
+                "usr": "s:8PulseSDK9OSLogSinkV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8PulseSDK9OSLogSinkV9subsystem8categoryACSS_SStcfc",
+            "mangledName": "$s8PulseSDK9OSLogSinkV9subsystem8categoryACSS_SStcfc",
+            "moduleName": "PulseSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "write",
+            "printedName": "write(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PulseEvent",
+                "printedName": "PulseSDK.PulseEvent",
+                "usr": "s:8PulseSDK0A5EventV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PulseSDK9OSLogSinkV5writeyyAA0A5EventVF",
+            "mangledName": "$s8PulseSDK9OSLogSinkV5writeyyAA0A5EventVF",
+            "moduleName": "PulseSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8PulseSDK9OSLogSinkV",
+        "mangledName": "$s8PulseSDK9OSLogSinkV",
+        "moduleName": "PulseSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "PulseSink",
+            "printedName": "PulseSink",
+            "usr": "s:8PulseSDK0A4SinkP",
+            "mangledName": "$s8PulseSDK0A4SinkP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Synchronization",
+        "printedName": "Synchronization",
+        "declKind": "Import",
+        "moduleName": "PulseSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Pulse",
+        "printedName": "Pulse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PulseSDK0A0O7versionSSvpZ",
+            "mangledName": "$s8PulseSDK0A0O7versionSSvpZ",
+            "moduleName": "PulseSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A0O7versionSSvgZ",
+                "mangledName": "$s8PulseSDK0A0O7versionSSvgZ",
+                "moduleName": "PulseSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isConfigured",
+            "printedName": "isConfigured",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PulseSDK0A0O12isConfiguredSbvpZ",
+            "mangledName": "$s8PulseSDK0A0O12isConfiguredSbvpZ",
+            "moduleName": "PulseSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A0O12isConfiguredSbvgZ",
+                "mangledName": "$s8PulseSDK0A0O12isConfiguredSbvgZ",
+                "moduleName": "PulseSDK",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "activeSinkIDs",
+            "printedName": "activeSinkIDs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PulseSDK0A0O13activeSinkIDsSaySSGvpZ",
+            "mangledName": "$s8PulseSDK0A0O13activeSinkIDsSaySSGvpZ",
+            "moduleName": "PulseSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A0O13activeSinkIDsSaySSGvgZ",
+                "mangledName": "$s8PulseSDK0A0O13activeSinkIDsSaySSGvgZ",
+                "moduleName": "PulseSDK",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(_:sinks:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PulseConfig",
+                "printedName": "PulseSDK.PulseConfig",
+                "hasDefaultArg": true,
+                "usr": "s:8PulseSDK0A6ConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[any PulseSDK.PulseSink]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PulseSink",
+                    "printedName": "any PulseSDK.PulseSink",
+                    "usr": "s:8PulseSDK0A4SinkP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PulseSDK0A0O9configure_5sinksyAA0A6ConfigV_SayAA0A4Sink_pGtFZ",
+            "mangledName": "$s8PulseSDK0A0O9configure_5sinksyAA0A6ConfigV_SayAA0A4Sink_pGtFZ",
+            "moduleName": "PulseSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(_:level:attributes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PulseLevel",
+                "printedName": "PulseSDK.PulseLevel",
+                "hasDefaultArg": true,
+                "usr": "s:8PulseSDK0A5LevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PulseSDK0A0O3log_5level10attributesySS_AA0A5LevelOSDyS2SGtFZ",
+            "mangledName": "$s8PulseSDK0A0O3log_5level10attributesySS_AA0A5LevelOSDyS2SGtFZ",
+            "moduleName": "PulseSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8PulseSDK0A0O",
+        "mangledName": "$s8PulseSDK0A0O",
+        "moduleName": "PulseSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PulseConfig",
+        "printedName": "PulseConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "minLevel",
+            "printedName": "minLevel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PulseLevel",
+                "printedName": "PulseSDK.PulseLevel",
+                "usr": "s:8PulseSDK0A5LevelO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PulseSDK0A6ConfigV8minLevelAA0aE0Ovp",
+            "mangledName": "$s8PulseSDK0A6ConfigV8minLevelAA0aE0Ovp",
+            "moduleName": "PulseSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PulseLevel",
+                    "printedName": "PulseSDK.PulseLevel",
+                    "usr": "s:8PulseSDK0A5LevelO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A6ConfigV8minLevelAA0aE0Ovg",
+                "mangledName": "$s8PulseSDK0A6ConfigV8minLevelAA0aE0Ovg",
+                "moduleName": "PulseSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PulseLevel",
+                    "printedName": "PulseSDK.PulseLevel",
+                    "usr": "s:8PulseSDK0A5LevelO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A6ConfigV8minLevelAA0aE0Ovs",
+                "mangledName": "$s8PulseSDK0A6ConfigV8minLevelAA0aE0Ovs",
+                "moduleName": "PulseSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A6ConfigV8minLevelAA0aE0OvM",
+                "mangledName": "$s8PulseSDK0A6ConfigV8minLevelAA0aE0OvM",
+                "moduleName": "PulseSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "environment",
+            "printedName": "environment",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PulseSDK0A6ConfigV11environmentSSvp",
+            "mangledName": "$s8PulseSDK0A6ConfigV11environmentSSvp",
+            "moduleName": "PulseSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A6ConfigV11environmentSSvg",
+                "mangledName": "$s8PulseSDK0A6ConfigV11environmentSSvg",
+                "moduleName": "PulseSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A6ConfigV11environmentSSvs",
+                "mangledName": "$s8PulseSDK0A6ConfigV11environmentSSvs",
+                "moduleName": "PulseSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A6ConfigV11environmentSSvM",
+                "mangledName": "$s8PulseSDK0A6ConfigV11environmentSSvM",
+                "moduleName": "PulseSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxQueueSize",
+            "printedName": "maxQueueSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PulseSDK0A6ConfigV12maxQueueSizeSivp",
+            "mangledName": "$s8PulseSDK0A6ConfigV12maxQueueSizeSivp",
+            "moduleName": "PulseSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A6ConfigV12maxQueueSizeSivg",
+                "mangledName": "$s8PulseSDK0A6ConfigV12maxQueueSizeSivg",
+                "moduleName": "PulseSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A6ConfigV12maxQueueSizeSivs",
+                "mangledName": "$s8PulseSDK0A6ConfigV12maxQueueSizeSivs",
+                "moduleName": "PulseSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A6ConfigV12maxQueueSizeSivM",
+                "mangledName": "$s8PulseSDK0A6ConfigV12maxQueueSizeSivM",
+                "moduleName": "PulseSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PulseConfig",
+                "printedName": "PulseSDK.PulseConfig",
+                "usr": "s:8PulseSDK0A6ConfigV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8PulseSDK0A6ConfigVACycfc",
+            "mangledName": "$s8PulseSDK0A6ConfigVACycfc",
+            "moduleName": "PulseSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8PulseSDK0A6ConfigV",
+        "mangledName": "$s8PulseSDK0A6ConfigV",
+        "moduleName": "PulseSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PulseSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PulseEvent",
+        "printedName": "PulseEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PulseSDK0A5EventV4nameSSvp",
+            "mangledName": "$s8PulseSDK0A5EventV4nameSSvp",
+            "moduleName": "PulseSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A5EventV4nameSSvg",
+                "mangledName": "$s8PulseSDK0A5EventV4nameSSvg",
+                "moduleName": "PulseSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "level",
+            "printedName": "level",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PulseLevel",
+                "printedName": "PulseSDK.PulseLevel",
+                "usr": "s:8PulseSDK0A5LevelO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PulseSDK0A5EventV5levelAA0A5LevelOvp",
+            "mangledName": "$s8PulseSDK0A5EventV5levelAA0A5LevelOvp",
+            "moduleName": "PulseSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PulseLevel",
+                    "printedName": "PulseSDK.PulseLevel",
+                    "usr": "s:8PulseSDK0A5LevelO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A5EventV5levelAA0A5LevelOvg",
+                "mangledName": "$s8PulseSDK0A5EventV5levelAA0A5LevelOvg",
+                "moduleName": "PulseSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "attributes",
+            "printedName": "attributes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PulseSDK0A5EventV10attributesSDyS2SGvp",
+            "mangledName": "$s8PulseSDK0A5EventV10attributesSDyS2SGvp",
+            "moduleName": "PulseSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A5EventV10attributesSDyS2SGvg",
+                "mangledName": "$s8PulseSDK0A5EventV10attributesSDyS2SGvg",
+                "moduleName": "PulseSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timestamp",
+            "printedName": "timestamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PulseSDK0A5EventV9timestamp10Foundation4DateVvp",
+            "mangledName": "$s8PulseSDK0A5EventV9timestamp10Foundation4DateVvp",
+            "moduleName": "PulseSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A5EventV9timestamp10Foundation4DateVvg",
+                "mangledName": "$s8PulseSDK0A5EventV9timestamp10Foundation4DateVvg",
+                "moduleName": "PulseSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(name:level:attributes:timestamp:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PulseEvent",
+                "printedName": "PulseSDK.PulseEvent",
+                "usr": "s:8PulseSDK0A5EventV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PulseLevel",
+                "printedName": "PulseSDK.PulseLevel",
+                "hasDefaultArg": true,
+                "usr": "s:8PulseSDK0A5LevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "hasDefaultArg": true,
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8PulseSDK0A5EventV4name5level10attributes9timestampACSS_AA0A5LevelOSDyS2SG10Foundation4DateVtcfc",
+            "mangledName": "$s8PulseSDK0A5EventV4name5level10attributes9timestampACSS_AA0A5LevelOSDyS2SG10Foundation4DateVtcfc",
+            "moduleName": "PulseSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "withAttributes",
+            "printedName": "withAttributes(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PulseEvent",
+                "printedName": "PulseSDK.PulseEvent",
+                "usr": "s:8PulseSDK0A5EventV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PulseSDK0A5EventV14withAttributesyACSDyS2SGF",
+            "mangledName": "$s8PulseSDK0A5EventV14withAttributesyACSDyS2SGF",
+            "moduleName": "PulseSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "logLine",
+            "printedName": "logLine",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PulseSDK0A5EventV7logLineSSvp",
+            "mangledName": "$s8PulseSDK0A5EventV7logLineSSvp",
+            "moduleName": "PulseSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A5EventV7logLineSSvg",
+                "mangledName": "$s8PulseSDK0A5EventV7logLineSSvg",
+                "moduleName": "PulseSDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8PulseSDK0A5EventV",
+        "mangledName": "$s8PulseSDK0A5EventV",
+        "moduleName": "PulseSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PulseLevel",
+        "printedName": "PulseLevel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "verbose",
+            "printedName": "verbose",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PulseSDK.PulseLevel.Type) -> PulseSDK.PulseLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PulseLevel",
+                    "printedName": "PulseSDK.PulseLevel",
+                    "usr": "s:8PulseSDK0A5LevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PulseSDK.PulseLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PulseLevel",
+                        "printedName": "PulseSDK.PulseLevel",
+                        "usr": "s:8PulseSDK0A5LevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8PulseSDK0A5LevelO7verboseyA2CmF",
+            "mangledName": "$s8PulseSDK0A5LevelO7verboseyA2CmF",
+            "moduleName": "PulseSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "debug",
+            "printedName": "debug",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PulseSDK.PulseLevel.Type) -> PulseSDK.PulseLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PulseLevel",
+                    "printedName": "PulseSDK.PulseLevel",
+                    "usr": "s:8PulseSDK0A5LevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PulseSDK.PulseLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PulseLevel",
+                        "printedName": "PulseSDK.PulseLevel",
+                        "usr": "s:8PulseSDK0A5LevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8PulseSDK0A5LevelO5debugyA2CmF",
+            "mangledName": "$s8PulseSDK0A5LevelO5debugyA2CmF",
+            "moduleName": "PulseSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "info",
+            "printedName": "info",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PulseSDK.PulseLevel.Type) -> PulseSDK.PulseLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PulseLevel",
+                    "printedName": "PulseSDK.PulseLevel",
+                    "usr": "s:8PulseSDK0A5LevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PulseSDK.PulseLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PulseLevel",
+                        "printedName": "PulseSDK.PulseLevel",
+                        "usr": "s:8PulseSDK0A5LevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8PulseSDK0A5LevelO4infoyA2CmF",
+            "mangledName": "$s8PulseSDK0A5LevelO4infoyA2CmF",
+            "moduleName": "PulseSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "warn",
+            "printedName": "warn",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PulseSDK.PulseLevel.Type) -> PulseSDK.PulseLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PulseLevel",
+                    "printedName": "PulseSDK.PulseLevel",
+                    "usr": "s:8PulseSDK0A5LevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PulseSDK.PulseLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PulseLevel",
+                        "printedName": "PulseSDK.PulseLevel",
+                        "usr": "s:8PulseSDK0A5LevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8PulseSDK0A5LevelO4warnyA2CmF",
+            "mangledName": "$s8PulseSDK0A5LevelO4warnyA2CmF",
+            "moduleName": "PulseSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PulseSDK.PulseLevel.Type) -> PulseSDK.PulseLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PulseLevel",
+                    "printedName": "PulseSDK.PulseLevel",
+                    "usr": "s:8PulseSDK0A5LevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PulseSDK.PulseLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PulseLevel",
+                        "printedName": "PulseSDK.PulseLevel",
+                        "usr": "s:8PulseSDK0A5LevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8PulseSDK0A5LevelO5erroryA2CmF",
+            "mangledName": "$s8PulseSDK0A5LevelO5erroryA2CmF",
+            "moduleName": "PulseSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "<",
+            "printedName": "<(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PulseLevel",
+                "printedName": "PulseSDK.PulseLevel",
+                "usr": "s:8PulseSDK0A5LevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PulseLevel",
+                "printedName": "PulseSDK.PulseLevel",
+                "usr": "s:8PulseSDK0A5LevelO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PulseSDK0A5LevelO1loiySbAC_ACtFZ",
+            "mangledName": "$s8PulseSDK0A5LevelO1loiySbAC_ACtFZ",
+            "moduleName": "PulseSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PulseSDK0A5LevelO11descriptionSSvp",
+            "mangledName": "$s8PulseSDK0A5LevelO11descriptionSSvp",
+            "moduleName": "PulseSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A5LevelO11descriptionSSvg",
+                "mangledName": "$s8PulseSDK0A5LevelO11descriptionSSvg",
+                "moduleName": "PulseSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PulseSDK.PulseLevel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PulseLevel",
+                    "printedName": "PulseSDK.PulseLevel",
+                    "usr": "s:8PulseSDK0A5LevelO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8PulseSDK0A5LevelO8rawValueACSgSi_tcfc",
+            "mangledName": "$s8PulseSDK0A5LevelO8rawValueACSgSi_tcfc",
+            "moduleName": "PulseSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PulseSDK0A5LevelO8rawValueSivp",
+            "mangledName": "$s8PulseSDK0A5LevelO8rawValueSivp",
+            "moduleName": "PulseSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A5LevelO8rawValueSivg",
+                "mangledName": "$s8PulseSDK0A5LevelO8rawValueSivg",
+                "moduleName": "PulseSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8PulseSDK0A5LevelO",
+        "mangledName": "$s8PulseSDK0A5LevelO",
+        "moduleName": "PulseSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Comparable",
+            "printedName": "Comparable",
+            "usr": "s:SL",
+            "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PulseSink",
+        "printedName": "PulseSink",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PulseSDK0A4SinkP2idSSvp",
+            "mangledName": "$s8PulseSDK0A4SinkP2idSSvp",
+            "moduleName": "PulseSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A4SinkP2idSSvg",
+                "mangledName": "$s8PulseSDK0A4SinkP2idSSvg",
+                "moduleName": "PulseSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PulseSDK.PulseSink>",
+                "sugared_genericSig": "<Self where Self : PulseSDK.PulseSink>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "write",
+            "printedName": "write(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PulseEvent",
+                "printedName": "PulseSDK.PulseEvent",
+                "usr": "s:8PulseSDK0A5EventV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PulseSDK0A4SinkP5writeyyAA0A5EventVKF",
+            "mangledName": "$s8PulseSDK0A4SinkP5writeyyAA0A5EventVKF",
+            "moduleName": "PulseSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PulseSDK.PulseSink>",
+            "sugared_genericSig": "<Self where Self : PulseSDK.PulseSink>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:8PulseSDK0A4SinkP",
+        "mangledName": "$s8PulseSDK0A4SinkP",
+        "moduleName": "PulseSDK",
+        "genericSig": "<τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Self : Swift.Sendable>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/rondz\/IOS\/PulseiOS\/PulseSDK\/PulseSDK\/OSLogSink.swift",
+      "kind": "StringLiteral",
+      "offset": 67,
+      "length": 7,
+      "value": "\"oslog\""
+    },
+    {
+      "filePath": "\/Users\/rondz\/IOS\/PulseiOS\/PulseSDK\/PulseSDK\/OSLogSink.swift",
+      "kind": "StringLiteral",
+      "offset": 181,
+      "length": 15,
+      "value": "\"dev.pulse.sdk\""
+    },
+    {
+      "filePath": "\/Users\/rondz\/IOS\/PulseiOS\/PulseSDK\/PulseSDK\/OSLogSink.swift",
+      "kind": "StringLiteral",
+      "offset": 217,
+      "length": 12,
+      "value": "\"PulseEvent\""
+    },
+    {
+      "filePath": "\/Users\/rondz\/IOS\/PulseiOS\/PulseSDK\/PulseSDK\/Pulse.swift",
+      "kind": "StringLiteral",
+      "offset": 76,
+      "length": 7,
+      "value": "\"0.1.0\""
+    },
+    {
+      "filePath": "\/Users\/rondz\/IOS\/PulseiOS\/PulseSDK\/PulseSDK\/Pulse.swift",
+      "kind": "Dictionary",
+      "offset": 1085,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/rondz\/IOS\/PulseiOS\/PulseSDK\/PulseSDK\/PulseConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 121,
+      "length": 12,
+      "value": "\"production\""
+    },
+    {
+      "filePath": "\/Users\/rondz\/IOS\/PulseiOS\/PulseSDK\/PulseSDK\/PulseConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 169,
+      "length": 3,
+      "value": "256"
+    },
+    {
+      "filePath": "\/Users\/rondz\/IOS\/PulseiOS\/PulseSDK\/PulseSDK\/PulseEvent.swift",
+      "kind": "Dictionary",
+      "offset": 298,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/rondz\/IOS\/PulseiOS\/PulseSDK\/PulseSDK\/PulseLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/rondz\/IOS\/PulseiOS\/PulseSDK\/PulseSDK\/PulseLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 90,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/rondz\/IOS\/PulseiOS\/PulseSDK\/PulseSDK\/PulseLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 108,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/rondz\/IOS\/PulseiOS\/PulseSDK\/PulseSDK\/PulseLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 126,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/rondz\/IOS\/PulseiOS\/PulseSDK\/PulseSDK\/PulseLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 145,
+      "length": 1,
+      "value": "6"
+    }
+  ]
+}

@@ -6,7 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F41E112B306EF51B00A74B9B /* build-xcframework.sh in Resources */ = {isa = PBXBuildFile; fileRef = F41E112A306EF51A00A74B9B /* build-xcframework.sh */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		F41E112A306EF51A00A74B9B /* build-xcframework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "build-xcframework.sh"; sourceTree = "<group>"; };
 		F4EE7D40306EF0ED00A7F1BF /* PulseSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PulseSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -32,6 +37,7 @@
 		F4EE7D36306EF0ED00A7F1BF = {
 			isa = PBXGroup;
 			children = (
+				F41E112A306EF51A00A74B9B /* build-xcframework.sh */,
 				F4EE7D42306EF0ED00A7F1BF /* PulseSDK */,
 				F4EE7D41306EF0ED00A7F1BF /* Products */,
 			);
@@ -120,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41E112B306EF51B00A74B9B /* build-xcframework.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

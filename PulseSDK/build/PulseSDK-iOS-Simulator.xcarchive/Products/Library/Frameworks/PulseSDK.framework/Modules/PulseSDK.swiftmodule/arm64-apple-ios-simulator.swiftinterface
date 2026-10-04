@@ -1,0 +1,66 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios26.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PulseSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+import Foundation
+import Swift
+import Synchronization
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+public struct OSLogSink : PulseSDK.PulseSink {
+  public let id: Swift.String
+  public init(subsystem: Swift.String = "dev.pulse.sdk", category: Swift.String = "PulseEvent")
+  public func write(_ event: PulseSDK.PulseEvent)
+}
+public enum Pulse {
+  public static let version: Swift.String
+  public static var isConfigured: Swift.Bool {
+    get
+  }
+  public static var activeSinkIDs: [Swift.String] {
+    get
+  }
+  public static func configure(_ config: PulseSDK.PulseConfig = PulseConfig(), sinks: [any PulseSDK.PulseSink] = [OSLogSink()])
+  public static func log(_ name: Swift.String, level: PulseSDK.PulseLevel = .info, attributes: [Swift.String : Swift.String] = [:])
+}
+public struct PulseConfig : Swift.Sendable {
+  public var minLevel: PulseSDK.PulseLevel
+  public var environment: Swift.String
+  public var maxQueueSize: Swift.Int
+  public init()
+}
+public struct PulseEvent : Swift.Sendable {
+  public let name: Swift.String
+  public let level: PulseSDK.PulseLevel
+  public let attributes: [Swift.String : Swift.String]
+  public let timestamp: Foundation.Date
+  public init(name: Swift.String, level: PulseSDK.PulseLevel = .info, attributes: [Swift.String : Swift.String] = [:], timestamp: Foundation.Date = Date())
+  public func withAttributes(_ extra: [Swift.String : Swift.String]) -> PulseSDK.PulseEvent
+  public var logLine: Swift.String {
+    get
+  }
+}
+public enum PulseLevel : Swift.Int, Swift.Sendable, Swift.Comparable {
+  case verbose
+  case debug
+  case info
+  case warn
+  case error
+  public static func < (lhs: PulseSDK.PulseLevel, rhs: PulseSDK.PulseLevel) -> Swift.Bool
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol PulseSink : Swift.Sendable {
+  var id: Swift.String { get }
+  func write(_ event: PulseSDK.PulseEvent) throws
+}
+extension PulseSDK.PulseLevel : Swift.Hashable {}
+extension PulseSDK.PulseLevel : Swift.RawRepresentable {}
