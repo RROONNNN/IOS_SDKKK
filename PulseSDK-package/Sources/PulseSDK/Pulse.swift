@@ -18,11 +18,11 @@ public enum Pulse {
     ) {
         let created = engine.withLock { current -> Bool in
                 guard current == nil else { return false }
-                current = PulseEngine(config: config, sinks: sinks + DebugSinks.make())
+                current = PulseEngine(config: config, sinks: sinks + DebugSinks.make(enabled: config.debugMode))
                 return true
             }
         if created {
-                InternalLog.info("Pulse \(version) configured env=\(config.environment)")
+                InternalLog.info("Pulse \(version) configured env=\(config.environment) debugMode=\(config.debugMode)")
             } else {
                 InternalLog.warning("Pulse.configure() called more than once — ignored.")
             }

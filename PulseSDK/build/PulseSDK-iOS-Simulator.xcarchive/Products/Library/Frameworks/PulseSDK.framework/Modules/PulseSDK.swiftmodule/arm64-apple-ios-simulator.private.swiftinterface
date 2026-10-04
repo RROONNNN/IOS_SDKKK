@@ -29,6 +29,7 @@ public struct PulseConfig : Swift.Sendable {
   public var minLevel: PulseSDK.PulseLevel
   public var environment: Swift.String
   public var maxQueueSize: Swift.Int
+  public var debugMode: Swift.Bool
   public init()
 }
 public struct PulseEvent : Swift.Sendable {

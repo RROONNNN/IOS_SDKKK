@@ -735,6 +735,93 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "debugMode",
+            "printedName": "debugMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PulseSDK0A6ConfigV9debugModeSbvp",
+            "mangledName": "$s8PulseSDK0A6ConfigV9debugModeSbvp",
+            "moduleName": "PulseSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A6ConfigV9debugModeSbvg",
+                "mangledName": "$s8PulseSDK0A6ConfigV9debugModeSbvg",
+                "moduleName": "PulseSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A6ConfigV9debugModeSbvs",
+                "mangledName": "$s8PulseSDK0A6ConfigV9debugModeSbvs",
+                "moduleName": "PulseSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PulseSDK0A6ConfigV9debugModeSbvM",
+                "mangledName": "$s8PulseSDK0A6ConfigV9debugModeSbvM",
+                "moduleName": "PulseSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -1733,6 +1820,13 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/rondz\/IOS\/PulseiOS\/PulseSDK\/PulseSDK\/Internal\/DebugSinks.swift",
+      "kind": "StringLiteral",
+      "offset": 332,
+      "length": 19,
+      "value": "\"debug-name-linter\""
+    },
+    {
       "filePath": "\/Users\/rondz\/IOS\/PulseiOS\/PulseSDK\/PulseSDK\/OSLogSink.swift",
       "kind": "StringLiteral",
       "offset": 67,
@@ -1763,7 +1857,7 @@
     {
       "filePath": "\/Users\/rondz\/IOS\/PulseiOS\/PulseSDK\/PulseSDK\/Pulse.swift",
       "kind": "Dictionary",
-      "offset": 1085,
+      "offset": 1140,
       "length": 3,
       "value": "[]"
     },
@@ -1780,6 +1874,13 @@
       "offset": 169,
       "length": 3,
       "value": "256"
+    },
+    {
+      "filePath": "\/Users\/rondz\/IOS\/PulseiOS\/PulseSDK\/PulseSDK\/PulseConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 389,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/rondz\/IOS\/PulseiOS\/PulseSDK\/PulseSDK\/PulseEvent.swift",

@@ -1,17 +1,13 @@
 import Foundation
 
+/// Debug-only sinks. Compiled into every build of the SDK, but only enabled when
+/// the host app sets `PulseConfig.debugMode`.
 enum DebugSinks {
-
-    static func make() -> [any PulseSink] {
-#if DEBUG
-       return [EventNameLinterSink()]
-       #else
-       return []
-       #endif
+    static func make(enabled: Bool) -> [any PulseSink] {
+        enabled ? [EventNameLinterSink()] : []
     }
 }
 
-#if DEBUG
 struct EventNameLinterSink: PulseSink {
     let id = "debug-name-linter"
 //    snake_case
@@ -22,4 +18,3 @@ struct EventNameLinterSink: PulseSink {
         }
     }
 }
-#endif
